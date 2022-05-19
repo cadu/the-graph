@@ -23,7 +23,7 @@ contract RandomWinnerGame is VRFConsumerBase, Ownable {
   uint256 public gameId;
 
   // Emitted when the game starts
-  event GameStarted(uint256 gameId, uint8 maxPlayers, uint256 entryFree);
+  event GameStarted(uint256 gameId, uint8 maxPlayers, uint256 entryFee);
   // Emitted when someone joins a game
   event PlayerJoined(uint256 gameId, address player);
   // Emitted when the game ends
